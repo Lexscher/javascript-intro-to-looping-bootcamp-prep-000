@@ -1,7 +1,8 @@
 fuction forLoop(arr) {
   for(let i = 0; i < 25; i++) {
-    i === 0 || i === 1 ? arr.push("I am 1 strange loop.") : arr.push(`I am ${i} strage loops`);
+    `I am ${i} strange loop${i === 0 ? '' : 's'}.`
   }
+  return arr;
 }
 
 function whileLoop(n){
@@ -15,6 +16,6 @@ function doWhileLoop(num) {
   do {
     console.log("I run once regardless.");
     num--;
-  } while (num > 0)
+  } while (0 < num);
 }
 
